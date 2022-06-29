@@ -1,0 +1,82 @@
+<!--doc name: lec-08-entity-references.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML Character Entity References
+    </title>
+    <link rel="icon" href="banana.png">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="banana.png" alt="Banana Man" width="64" height="64"></a>
+        <nav>
+            <a href="lec-09.html">next lecture notes!</a>
+            <br>
+            <a href="lec-07-lists.html">previous lecture notes!</a>
+        </nav>
+    </header>
+
+
+    <div id="notes">
+        <h1>
+            Lecture 8 notes: HTML Character Entity References
+        </h1>
+        Characters to avoid to prevent rendering issues:
+        <ul>
+            <li>
+                &lt; (less than)
+            </li>
+            <li>
+                &gt; (greater than)
+            </li>
+            <li>
+                &amp; (ampersand)
+            </li>
+        </ul>
+        Basically, html interpreter recognizes special characters and must be referenced using this convention: "&amp;X;"
+        <br>
+        I.E. for the above characters you would use:
+        <ul>
+            <li>
+                &amp;lt;
+            </li>
+            <li>
+                &amp;gt;
+            </li>
+            <li>
+                &amp;amp;
+            </li>
+        </ul>
+        to display these special characters<br>
+        HTML       <!--notice how the extra spaces here do not affect the spacing in the browser-->    doesn't break on syntax errors: it just skips whatever it cannot comprehend
+
+        <br>
+        <br>
+        In HTML words wrap as page size is adjusted.
+        <br>
+        to keep words conjoined, use a non-breaking space: &amp;nbsp; to provide a space between words without separating them.
+        <br>
+        For examples: Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Fuga&nbsp;officia&nbsp;dicta&nbsp;non&nbsp;maxime&nbsp;repudiandae&nbsp;sunt&nbsp;totam!&nbsp;Quasi&nbsp;praesentium&nbsp;nisi&nbsp;et!
+        <br>
+        So one key take away is the important of the space in HTML as it defines the end/start of an new string
+        <br>
+        In order to get multiple spaces between words/strings a &lt;span&gt; tag should be used and a margin applied
+    </div>
+    <aside>
+
+    </aside>
+    <footer>
+        <br>
+        ANTONIO 2022 &copy; Copyright 
+    </footer>
+</body>
+
+
+
+
+</html>
