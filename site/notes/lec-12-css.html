@@ -1,0 +1,104 @@
+<!--doc name: lec-12-css.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Anatomy of a CSS rule</title>
+    <link rel="icon" href="banana.png">
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="banana.png" alt="Banana Man" width="64" height="64"></a>
+        <nav>
+            <a href="">next lecture notes</a>
+            <br><a href="lec-09.html">previous lecture notes!</a>
+
+        </nav>
+    </header>
+    <section id="section1">
+        <h3>
+            Section 1: Gathering some thoughts...
+        </h3>
+        <p>
+            HTML is the structure of the website and CSS makes the website human friendly
+        </p>
+        <p>
+            Hyper Text Markup Language and Cascading Style Sheets: Hyper text meaning an abundance of text and Cascading
+            meaning passed on to others.
+        </p>
+        <p>
+            CSS is used as a separate file as it enables the scalability of a website; instead of individually styling
+            multiple HTML files inline/internally, doing it externally and applying it to every page means less
+            typing/less redundant processes
+        </p>
+        <p>
+            Consider any website with many links; even though the content is different on each page, the style remains
+            the same. Keeping this convention makes it easier for the user to understand what is going on without having
+            to observe the whole page i.e: keeping navigation, main body, etc in the same area makes it so the user can
+            expect where to look.
+        </p>
+        <p>
+            By doing CSS externally and linking it to multiple files, a convention is created and the website feels like
+            a cohesive entity rather than multiple linked pages. CONSISTENCY and EFFICIENCY
+        </p>
+        <p>
+            In order to get CSS files linked correctly; a convention should be used within the HTML files so the CSS
+            file can be applied to them. This means keeping id names and class names the same.
+        </p>
+    </section>
+    <section id="section2">
+        <h3>
+            Section 2: Actual notes!
+        </h3>
+        <p>
+            a <b>CSS Rule</b> consits of:
+        </p>
+        <ul>
+            <li>a <b>selector</b>(which ELEMENT to be styled) and is followed by {}...</li>
+            <li>
+                aka the <b>declaration</b>. the declaration consists of two parts:
+                <ul>
+                    <li><b>property</b></li>
+                    <li><b>value</b></li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            Element properties and their associated possible values can be found on
+            <a href="https://www.quackit.com/html/tags/" target="_blank">this website!</a>
+            <br>
+            the element property and value are always separated by a colon. a ";" indicates the end of a styling
+            declaration.
+            <br>
+            A CSS rule can consist of multiple declarations
+            <br>
+            Every BROWSER has its own default styles that it applies to different HTML elements all of which can be
+            overriden with your own stlyes
+        </p>
+    </section>
+</body>
+<aside>
+    In summary:
+    <ul>
+        <li>
+            Syntax of a CSS Rule:
+            <ul>
+                <li>Selector</li>
+                <li>Declaration</li>
+                <li>Property/Value</li>
+            </ul>
+        </li>
+        <li>
+            Style sheet 
+        </li>
+    </ul>
+    <a href="">Next up: Element class &amp; ID selectors</a>
+</aside>
+<footer>
+    ANTONIO 2022 &copy; Copyright
+</footer>
+
+</html>
