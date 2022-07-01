@@ -1,0 +1,61 @@
+<!--doc name: lec-13.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lecture 13 notes</title>
+    <link rel="icon" href="banana.png"><!--this changes BROWSER ICON-->
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="banana.png" alt="Banana Man" width="64" height="64"></a>
+        <nav>
+        </nav>
+    </header>
+    
+    <section id="section1">
+        <p>
+            The browser uses its <span id="_to_bold">selector API to traverse</span> the DOM(Document Object Model), and pick out the elements matching the selector(id/class name)
+            <br>
+            CSS Rules can be applied by:
+            <ul>
+                <li>
+                    element selectors. all elements are affected
+                    <br>
+                    p{<br>color:blue;<br>}
+                </li>
+                <li>
+                    class selectors. element must have class name. referred to in CSS Rule with "."
+                    <br>can affect different types of elements so long as they share the attribute being modified
+                    <br>CSS:
+                    .classname{<br>color:red;<br>}
+                    <br>HTML:
+                    &lt;p class="classname"&gt;
+                </li>
+                <li>
+                    id selectors. ELEMENT(only one element can have this id). referred to in CSS Rule with "#"
+                    <br>since id's are unique per page, only one element is affected.
+                    <br>CSS:
+                    #idname{<br>color:yellow;<br>}
+                    <br>HTML:
+                    &lt;div id="idname"&gt;
+                </li>
+                
+            </ul>
+
+        </p>
+    </section>
+    <aside>
+        <h4>random notes</h4>
+        <p>
+            &lt;span&gt; is better to use than &lt;b&gt;(for bold) or &lt;i&gt; (for italic) for SEO reasons:<a href="https://stackoverflow.com/questions/3851842/html-css-styling-b-or-i-tags-instead-of-span" target="_blank">Span tag&gt;b/i tags</a>
+        </p>
+        <p>
+            You can also refer to a specific text by using #:~:???
+        </p>
+    </aside>
+    <footer>
+    </footer>
+</body>
+</html>
